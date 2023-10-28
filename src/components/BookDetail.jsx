@@ -10,6 +10,7 @@ const BookDetail = ({ book, onClose }) => {
   };
 
   if (!isVisible) {
+    setIsVisible(true)
     return null; // If isVisible is false, don't render the component
   }
   if (!book) {

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import bookImg from "../assets/book1.jfif"
 import '../styles/Home.css';
 
 const Home = () => {
@@ -13,7 +14,7 @@ const Home = () => {
         <div className="book-list">
           <div className="book-card">
             <img
-              src="book1.jpg"
+              src={bookImg}
               alt="Book 1"
               className="book-cover"
             />
@@ -25,7 +26,7 @@ const Home = () => {
           </div>
           <div className="book-card">
             <img
-              src="book2.jpg"
+              src={bookImg}
               alt="Book 2"
               className="book-cover"
             />
