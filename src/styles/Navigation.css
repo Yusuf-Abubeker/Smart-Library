@@ -1,0 +1,43 @@
+.nav {
+    background: #ffdb4d;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Comic Sans MS', cursive;
+  }
+  
+  .nav-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .nav-item {
+    display: inline;
+    margin: 0 20px;
+  }
+  
+  .nav-item a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #ff6600;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .nav-item a:hover {
+    color: #ff3300;
+  }
+  
+  /* Add a media query for smaller screens */
+  @media (max-width: 768px) {
+    .nav-list {
+      flex-direction: column;
+    }
+  
+    .nav-item {
+      margin: 10px 0;
+    }
+  }
+  

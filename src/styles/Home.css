@@ -1,0 +1,185 @@
+
+.header {
+    background: linear-gradient(135deg, #FF7F00, #FF00CC); /* Gradient background */
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    font-family: 'Baloo Bhai', cursive;
+    color: #fff;
+
+    border-bottom: 5px solid #FF00CC; /* Purple border at the bottom */
+}
+
+
+
+@keyframes rainbow {
+    0% { color: #fff; }
+    14% { color: #FF7F00; }
+    28% { color: #FFD500; }
+    42% { color: #00FF66; }
+    57% { color: #00CCFF; }
+    71% { color: #9400D3; }
+    85% { color: #FF00CC; }
+    100% { color: #FF7F00; }
+}
+
+
+/* Featured Books section styles */
+.featured-books {
+    text-align: center;
+    margin-top: 30px;
+    animation: fadeIn 2s;
+}
+
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    animation: slideIn 2s;
+}
+
+.book-card {
+    background: #fff;
+    border: 5px solid #FF7F00;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+    font-family: 'Baloo', cursive;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    margin: 10px;
+    position: relative;
+}
+
+.book-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    background: #FF00CC;
+}
+
+.book-cover {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+/* Read More link styles */
+.read-more-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #FF7F00;
+    color: #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background 0.3s;
+    font-size: 20px;
+    font-family: 'Baloo', cursive;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.read-more-link:hover {
+    background: #FFD500;
+}
+
+/* Popular Categories section styles */
+.popular-categories {
+    text-align: center;
+    margin-top: 30px;
+    animation: fadeIn 2s;
+}
+
+.category-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.category-button {
+    background: #00CC66;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: background 0.3s;
+    font-size: 24px;
+    font-family: 'Baloo', cursive;
+}
+
+.category-button:hover {
+    background: #009933;
+}
+
+/* Call to Action styles */
+.call-to-action {
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    background: #FF7F00;
+    color: #fff;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: background 0.3s;
+    font-size: 32px;
+    font-family: 'Baloo', cursive;
+}
+
+.btn:hover {
+    background: #FFD500;
+}
+
+@media screen and (max-width: 768px) {
+    .category-list {
+        flex-wrap: wrap; /* Wrap items when screen width is less than 768px */
+    }
+
+    .category-button {
+        flex: 1; /* Make the buttons equally sized when wrapping */
+        margin: 5px; /* Add spacing between the wrapped buttons */
+    }
+}
+/* Keyframe animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(30px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+
+
+/* @keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+} */
+

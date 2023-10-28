@@ -1,0 +1,94 @@
+/* BookList.css */
+
+.book-list {
+  text-align: center;
+  padding: 20px;
+  background: #ffdb4d;
+  font-family: 'Comic Sans MS', cursive;
+}
+
+.header {
+  background: #00ccff;
+  padding: 20px;
+}
+
+.library-title {
+  font-size: 36px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.book-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background: #f8f8f8;
+  border-radius: 10px;
+  animation: fadeIn 1s ease-in;
+}
+
+.book-card {
+  background: #fff;
+  border: 2px solid #ff6600;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  width: 100%;
+  transform-origin: center;
+}
+
+.book-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.book-cover {
+  max-width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.book-card:hover .book-cover {
+  transform: scale(1.1);
+}
+
+.book-title {
+  font-size: 20px;
+  margin: 10px 0;
+  font-family: 'Comic Sans MS', cursive;
+  color: #333;
+}
+
+.book-description {
+  font-size: 16px;
+  color: #666;
+  margin: 10px 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.read-button {
+  background: #ff6600;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: 'Comic Sans MS', cursive;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.read-button:hover {
+  background: #ff3300;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: scale(0.5); }
+  100% { opacity: 1; transform: scale(1); }
+}
