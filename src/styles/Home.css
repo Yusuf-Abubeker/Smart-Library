@@ -6,7 +6,7 @@
     font-size: 20px;
     font-family: 'Baloo Bhai', cursive;
     color: #fff;
-
+animation: rainbow 3s infinite ;
     border-bottom: 5px solid #FF00CC; /* Purple border at the bottom */
 }
 
@@ -24,7 +24,6 @@
 }
 
 
-/* Featured Books section styles */
 .featured-books {
     text-align: center;
     margin-top: 30px;
