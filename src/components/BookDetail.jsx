@@ -1,31 +1,39 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useNavigate, useParams } from "react-router-dom";
+import books from "../data/bookData"; 
 import "../styles/BookDetail.css";
 
-const BookDetail = ({ book, onClose }) => {
-  const [isVisible, setIsVisible] = useState(true);
-  const [isBookOpen, setIsBookOpen] = useState(false); // State to track if the book is open for reading
+const BookDetail = () => {
+  const navigate = useNavigate()
+  const [isBookOpen, setIsBookOpen] = useState(false);
+  const [book, setBook] = useState(null); // Store the selected book
+
+  const { bookId } = useParams();
+
+  useEffect(() => {
+ 
+    const selectedBook = books.find((book) => book.id === parseInt(bookId));
+    if (selectedBook) {
+      setBook(selectedBook);
+    }
+  }, [bookId]);
 
   const handleClose = () => {
-    setIsVisible(false);
-    setIsBookOpen(false)
-    onClose();
+
+    setIsBookOpen(false);
+    navigate('/books')
   };
 
   const handleReadBook = () => {
     setIsBookOpen(true);
   };
 
-  if (!isVisible) {
-    setIsVisible(true);
-    return null; // If isVisible is false, don't render the component
-  }
   if (!book) {
-    return null;
+    return <p>book is not gained</p>;
   }
 
-  // Render the book detail or the book content based on whether it's open for reading
   return (
-    <div className="book-detail book-detail-overlay">
+    <div className="book-detail">
       <div className="book-detail-header">
         <h2 className="book-detail-title">{book.title}</h2>
         <button className="close-button" onClick={handleClose}>

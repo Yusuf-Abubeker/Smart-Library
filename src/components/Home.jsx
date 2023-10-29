@@ -21,9 +21,9 @@ const Home = () => {
             />
             <h3>Adventure in Wonderland</h3>
             <p>Join Alice on her magical journey.</p>
-            <button to="/books/adventure" className="read-more-link">
+            <Link to="/books/1" className="read-more-link">
               Read More
-            </button>
+            </Link>
           </div>
           <div className="book-card">
             <img
@@ -33,9 +33,9 @@ const Home = () => {
             />
             <h3>The Dinosaur Guide</h3>
             <p>Learn about the fascinating world of dinosaurs.</p>
-            <button to="/books/dinosaurs" className="read-more-link">
+            <Link to="/books/2" className="read-more-link">
               Read More
-            </button>
+            </Link>
           </div>
         </div>
       </section>

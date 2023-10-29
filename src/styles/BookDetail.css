@@ -1,132 +1,122 @@
-.book-detail-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-end;
-  padding: 20px;
-  z-index: 1000; /* Ensure it's on top of other content */
-}
-
+/* BookDetail.css */
 .book-detail {
-  background: #f8f8f8;
-  border: 2px solid #ff6600;
-  border-radius: 10px;
+  background-color: #f7e6e8; /* Light pink background */
   padding: 20px;
-  font-family: 'Arial', sans-serif;
-  max-width: 80%; /* Limit the width to 80% of the viewport */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .book-detail-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .book-detail-title {
   font-size: 24px;
-  color: #ff6600;
-  font-weight: bold;
+  color: #ff6b81; /* Pink title */
 }
 
 .close-button {
-  background: #ff6600;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 10px;
-  font-size: 18px;
-  font-family: 'Arial', sans-serif;
+  background-color: #ffd700; /* Yellow button */
   border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
   cursor: pointer;
-  transition: background 0.3s;
+  font-weight: bold;
 }
 
 .close-button:hover {
-  background: #ff3300;
+  background-color: #ffeb3b; /* Brighter yellow on hover */
 }
 
 .book-detail-content {
   display: flex;
-  gap: 20px;
-  margin-top: 20px;
-  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff; /* White background to resemble pages */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.5s; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .book-detail-image img {
   max-width: 100%;
+  border: 5px solid #ff6b81; /* Pink border around the book image */
   border-radius: 10px;
+  margin-bottom: 20px;
+  animation: bounce 1s infinite alternate; /* Bouncing animation */
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.book-detail-info {
+  text-align: center;
+}
+
+.book-detail-category {
+  font-size: 16px;
+  color: #00aaff; /* Blue category text */
+  font-weight: bold;
 }
 
 .book-detail-description {
   font-size: 16px;
-  color: #333;
+  color: #006400; /* Dark green description text */
 }
-.book-detail-category{
-  font-size: 20px;
-  color: #ff6600;
-  font-weight: bold;
 
+.book-detail-content p {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: justify;
+  margin: 0;
+  padding: 10px;
+  background-color: #ffffcc; /* Light yellow background for readability */
+  border: 1px solid #000;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+  animation: zoomIn 1s; /* Zoom-in animation */
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .read-button {
-  background: #ff6600;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 10px;
-  font-size: 18px;
-  font-family: 'Arial', sans-serif;
+  background-color: #ff6b81; /* Pink Read button */
   border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
   cursor: pointer;
-  transition: background 0.3s;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #fff;
+  transition: background-color 0.3s;
 }
 
 .read-button:hover {
-  background: #ff3300;
-}
-
-
-.book-detail-content {
-  font-family: 'Comic Sans MS', cursive;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: justify;
-  padding: 20px;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  position: relative;
-  overflow: hidden;
-}
-
-.book-detail-content p {
-  margin-bottom: 20px;
-}
-
-.book-detail-content img {
-  max-width: 100%;
-  border-radius: 10px;
-}
-
-/* Add playful elements for kids */
-.book-detail-content {
-  background-color: #f9f6ea; /* Light yellow background */
-  padding: 20px;
-  border: 2px solid #f4d03f; /* Bright yellow border */
-}
-
-.book-detail-content p {
-  color: #2e86de; /* Blue text */
-}
-
-.book-detail-content img {
-  border: 5px solid #e74c3c; /* Red border for images */
-  margin: 10px 0;
-  max-width: 100%;
+  background-color: #ff4757; /* Darker pink on hover */
+  transform: scale(1.1);
 }

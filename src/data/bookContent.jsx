@@ -1,50 +1,55 @@
-export const bookContentAlice = `
-  Chapter 1: Down the Rabbit Hole
+export const bookContentAlice = (
+  <div>
+    <h3>Chapter 1: Down the Rabbit Hole</h3>
+    <p>
+      Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do:
+      once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it,
+      'and what is the use of a book,' thought Alice 'without pictures or conversation?'
+    </p>
+    <p>
+      So she was considering in her own mind, as well as she could,
+      for the hot day made her feel very sleepy and stupid, whether the pleasure of making a daisy chain would be worth the trouble of getting up
+      and picking the daisies, when suddenly a White Rabbit with pink eyes ran close by her.
+    </p>
+    <p>
+      There was nothing very remarkable in that, nor did Alice think it so very much out of the way to hear the Rabbit say to itself,
+      'Oh dear! Oh dear! I shall be too late.' But when the Rabbit actually took a watch out of its waistcoat pocket and looked at it and ran on,
+      Alice started to her feet, for she had never before seen a rabbit with either a waistcoat pocket, or a watch to take out of it,
+      and, burning with curiosity, she ran across the field after it.
+    </p>
+  </div>
+);
 
-  Alice was beginning to get very tired of sitting by her sister on the
-  bank, and of having nothing to do: once or twice she had peeped into
-  the book her sister was reading, but it had no pictures or
-  conversations in it, 'and what is the use of a book,' thought Alice
-  'without pictures or conversations?'
-  
-  So she was considering in her own mind, as well as she could, for the
-  hot day made her feel very sleepy and stupid, whether the pleasure
-  of making a daisy chain would be worth the trouble of getting up and
-  picking the daisies, when suddenly a White Rabbit with pink eyes ran
-  close by her.
-
-  There was nothing very remarkable in that, nor did Alice think it so
-  very much out of the way to hear the rabbit say to itself, 'Oh dear!
-  Oh dear! I shall be too late,' (when she thought it over afterwards,
-  it occurred to her that she ought to have wondered at this, but at the
-  time, it all seemed quite natural) but when the Rabbit actually took
-  a watch out of its waistcoat pocket, and looked at it, and ran on,
-  Alice started to her feet, for she had never before seen a rabbit
-  with a waistcoat pocket, or a watch to take out of it, and burning
-  with curiosity, she ran across the field after it, and was fortunate
-  enough to slip down a hole in the hedge and follow it.
-`;
-
-export const bookContentDinosaur = `
-  Chapter 1: The Age of Dinosaurs
-
-  Welcome to the fascinating world of dinosaurs! In this book, you'll
-  embark on a journey back in time to the age of these magnificent
-  creatures that once roamed the Earth.
-
-  Chapter 2: Types of Dinosaurs
-
-  Dinosaurs came in various shapes and sizes. From the mighty
-  Tyrannosaurus Rex to the gentle Brachiosaurus, you'll learn about the
-  different types of dinosaurs that existed.
-
-  Chapter 3: The Prehistoric World
-
-  Discover the environment in which dinosaurs lived, the lush
-  landscapes, and the challenges they faced.
-
-  ...
-`;
+export const bookContentDinosaur =(
+  <div>
+    <h3>Chapter 1: Introduction to Dinosaurs</h3>
+    <p>
+      Welcome to the world of dinosaurs! In this book, we will embark on a journey to discover the amazing creatures
+      that once roamed our planet. Dinosaurs, often referred to as "terrible lizards," were a diverse group of reptiles
+      that lived millions of years ago. They come in all shapes and sizes, and each species had its own unique features.
+    </p>
+    
+    <h3>Chapter 2: Dinosaur Classification</h3>
+    <p>
+      In this chapter, we'll explore how scientists classify dinosaurs into different groups. You'll learn about the main
+      dinosaur categories, such as sauropods, theropods, and ornithopods. We'll also discuss the characteristics that
+      distinguish each group and the diversity of dinosaur species within them.
+    </p>
+    
+    <h3>Chapter 3: Dinosaurs in Different Eras</h3>
+    <p>
+      Dinosaurs lived over a vast period, from the Triassic to the Cretaceous. In this chapter, we'll take a journey
+      through time and discover which dinosaurs existed during each era. You'll gain insights into how dinosaurs evolved
+      and adapted to their environments.
+    </p>
+    
+    <h3>Chapter 4: Dinosaur Fossils</h3>
+    <p>
+      Fossils are the key to our understanding of dinosaurs. We'll delve into the world of paleontology, exploring how
+      fossils form, get discovered, and help us reconstruct the lives of these prehistoric creatures.
+    </p>
+  </div>
+);
 export const pirateAdventuresContent = (
     <div>
       <h3>Chapter 1: The Mysterious Treasure Map</h3>

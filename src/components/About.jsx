@@ -16,7 +16,7 @@ const About = () => {
       <p className="about-fun-facts">
         Fun Facts:
         <ul>
-          <li>We have a magical collection of over 1000 books.</li>
+          <li>We have a magical collection of over 20 books.</li>
           <li>Join our reading quests and embark on epic journeys.</li>
           <li>Discover a new enchanting story every week.</li>
         </ul>

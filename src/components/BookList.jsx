@@ -1,8 +1,9 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import books from "../data/bookData";
 import "../styles/BookList.css";
 
-const BookList = ({ books, onBookSelect }) => {
+const BookList = () => {
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
   const selectedCategory = queryParams.get("category");
@@ -24,16 +25,16 @@ const BookList = ({ books, onBookSelect }) => {
      
       <div className="book-container">
         {filteredBooks.map((book) => (
-          <div
+          <Link to={`/books/${book.id}`}><div
             key={book.id}
             className="book-card"
-            onClick={() => onBookSelect(book)}
           >
             <img src={book.image} alt={book.title} className="book-cover" />
             <h3 className="book-title">{book.title}</h3>
             <p className="book-description">{book.description}</p>
             <button className="read-button">Read</button>
-          </div>
+          </div></Link>
+          
         ))}
       </div>
     </div>
