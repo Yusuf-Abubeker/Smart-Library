@@ -2,8 +2,8 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 70%;
-  height: 70%;
+  width: 100%;
+  height: 100%;
   background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
   display: flex;
   flex-direction: column;
@@ -88,4 +88,45 @@
 
 .read-button:hover {
   background: #ff3300;
+}
+
+
+.book-detail-content {
+  font-family: 'Comic Sans MS', cursive;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: justify;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.book-detail-content p {
+  margin-bottom: 20px;
+}
+
+.book-detail-content img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Add playful elements for kids */
+.book-detail-content {
+  background-color: #f9f6ea; /* Light yellow background */
+  padding: 20px;
+  border: 2px solid #f4d03f; /* Bright yellow border */
+}
+
+.book-detail-content p {
+  color: #2e86de; /* Blue text */
+}
+
+.book-detail-content img {
+  border: 5px solid #e74c3c; /* Red border for images */
+  margin: 10px 0;
+  max-width: 100%;
 }

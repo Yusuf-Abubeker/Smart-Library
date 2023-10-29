@@ -8,7 +8,6 @@ const Library = () => {
 
   const handleBookSelect = (book) => {
     if (selectedBook && selectedBook.id === book.id) {
-      // If the same book is clicked again, set selectedBook to null to close it
       setSelectedBook(null);
     } else {
       setSelectedBook(book);
