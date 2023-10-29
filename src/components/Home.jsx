@@ -42,15 +42,15 @@ const Home = () => {
       <section className="popular-categories">
         <h2>Popular Categories</h2>
         <div className="category-list">
-          <button to="/categories/adventure" className="category-button">
+          <Link to="/books?category=Adventure" className="category-button">
             Adventure
-          </button>
-          <button className="category-button">
+          </Link>
+          <Link  to="/books?category=Education" className="category-button">
             Education
-          </button>
-          <button to="/categories/mystery" className="category-button">
+          </Link>
+          <Link  to="/books?category=Mystery" className="category-button">
             Mystery
-          </button>
+          </Link>
         </div>
       </section>
       <section className="call-to-action">
