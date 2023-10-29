@@ -4,6 +4,7 @@ import bookImg from "../assets/book1.jfif"
 import '../styles/Home.css';
 
 const Home = () => {
+
   return (
     <div className="home">
       <header className='header'>
@@ -44,7 +45,7 @@ const Home = () => {
           <button to="/categories/adventure" className="category-button">
             Adventure
           </button>
-          <button to="/categories/education" className="category-button">
+          <button className="category-button">
             Education
           </button>
           <button to="/categories/mystery" className="category-button">

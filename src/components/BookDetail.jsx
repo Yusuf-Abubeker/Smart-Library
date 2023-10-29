@@ -29,6 +29,7 @@ const BookDetail = ({ book, onClose }) => {
           <img src={book.image} alt={book.title} />
         </div>
         <div className="book-detail-info">
+          <p className="book-detail-category">{book.category}</p>
           <p className="book-detail-description">{book.description}</p>
           <button className="read-button">Read</button>
         </div>

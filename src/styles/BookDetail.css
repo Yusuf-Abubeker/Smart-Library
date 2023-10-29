@@ -1,5 +1,3 @@
-/* BookDetail.css */
-
 .book-detail-overlay {
   position: fixed;
   top: 0;
@@ -68,6 +66,12 @@
 .book-detail-description {
   font-size: 16px;
   color: #333;
+}
+.book-detail-category{
+  font-size: 20px;
+  color: #ff6600;
+  font-weight: bold;
+
 }
 
 .read-button {

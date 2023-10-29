@@ -6,7 +6,7 @@
     font-size: 20px;
     font-family: 'Baloo Bhai', cursive;
     color: #fff;
-animation: rainbow 3s infinite ;
+animation: rainbow 5s infinite ;
     border-bottom: 5px solid #FF00CC; /* Purple border at the bottom */
 }
 
@@ -14,12 +14,12 @@ animation: rainbow 3s infinite ;
 
 @keyframes rainbow {
     0% { color: #fff; }
-    14% { color: #FF7F00; }
+    14% { color: #ffba75; }
     28% { color: #FFD500; }
     42% { color: #00FF66; }
     57% { color: #00CCFF; }
     71% { color: #9400D3; }
-    85% { color: #FF00CC; }
+    85% { color: #ee8ddb; }
     100% { color: #FF7F00; }
 }
 
