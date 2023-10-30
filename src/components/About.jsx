@@ -1,11 +1,12 @@
 import React from "react";
+import { FaMagic, FaBook, FaRocket } from "react-icons/fa"; // Import icons from react-icons
 import "../styles/About.css";
 import illustration from "../assets/kids-reading.jfif";
 
 const About = () => {
   return (
     <div className="about-page">
-      <h1 className="about-title">About Our Magical Library</h1>
+      <h1 className="about-title"><FaMagic />  About Our Magical Library</h1>
       <img src={illustration} alt="Kids Reading" className="about-illustration" />
       <p className="about-description">
         Welcome to our enchanting Children's Library, a place where your child's
@@ -14,7 +15,7 @@ const About = () => {
         opportunities.
       </p>
       <p className="about-fun-facts">
-        Fun Facts:
+      <FaBook /> Fun Facts:
         <ul>
           <li>We have a magical collection of over 20 books.</li>
           <li>Join our reading quests and embark on epic journeys.</li>

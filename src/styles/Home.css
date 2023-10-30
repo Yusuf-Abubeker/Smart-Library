@@ -100,19 +100,31 @@ animation: rainbow 5s infinite ;
 }
 
 .category-button {
-    background: #00CC66;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 15px;
-    text-decoration: none;
-    transition: background 0.3s;
-    font-size: 24px;
-    font-family: 'Baloo', cursive;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 15px 20px;
+  border: 2px solid #ff6600; /* Orange border */
+  border-radius: 10px;
+  background-color: #f8f8f8; /* Light gray background */
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
 .category-button:hover {
-    background: #009933;
+    background-color: #ff6600; /* Orange background on hover */
+  color: #fff; /* White text color on hover */
+  border-color: #ff6600;
 }
+.category-button svg {
+    font-size: 32px;
+  margin-bottom: 10px;
+ 
+  }
 
 /* Call to Action styles */
 .call-to-action {
@@ -141,12 +153,12 @@ animation: rainbow 5s infinite ;
 
 @media screen and (max-width: 768px) {
     .category-list {
-        flex-wrap: wrap; /* Wrap items when screen width is less than 768px */
+        flex-wrap: wrap;
     }
 
     .category-button {
-        flex: 1; /* Make the buttons equally sized when wrapping */
-        margin: 5px; /* Add spacing between the wrapped buttons */
+        flex: 1; 
+        margin: 5px; 
     }
 }
 /* Keyframe animations */

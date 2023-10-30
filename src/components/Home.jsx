@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FaStar, FaSchool, FaQuestionCircle, FaArrowRight } from 'react-icons/fa'; // Import icons from react-icons
 import bookImg from "../assets/book1.jfif"
 import '../styles/Home.css';
 
@@ -43,20 +44,20 @@ const Home = () => {
         <h2>Popular Categories</h2>
         <div className="category-list">
           <Link to="/books?category=Adventure" className="category-button">
-            Adventure
+          <FaStar />Adventure
           </Link>
           <Link  to="/books?category=Education" className="category-button">
-            Education
+          <FaSchool />Education
           </Link>
           <Link  to="/books?category=Mystery" className="category-button">
-            Mystery
+          <FaQuestionCircle />Mystery
           </Link>
         </div>
       </section>
       <section className="call-to-action">
         <h2>Get Started</h2>
         <p>Start exploring a world of wonderful stories and educational resources for kids.</p>
-        <Link to="/books" className="btn btn-primary">Browse the Library</Link>
+        <Link to="/books" className="btn btn-primary">Browse the Library <FaArrowRight /></Link>
       </section>
     </div>
   );
