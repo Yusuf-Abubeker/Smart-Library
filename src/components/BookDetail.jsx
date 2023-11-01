@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import books from "../data/bookData"; 
 import "../styles/BookDetail.css";
+import ErrorPage from "./ErrorPage";
 
 const BookDetail = () => {
   const navigate = useNavigate()
@@ -29,7 +30,7 @@ const BookDetail = () => {
   };
 
   if (!book) {
-    return <p>book is not gained</p>;
+    return <ErrorPage/>;
   }
 
   return (
