@@ -20,7 +20,7 @@ const BookDetail = () => {
 
   const handleClose = () => {
     setIsBookOpen(false);
-    navigate('/books');
+    navigate('/child/books');
   };
 
   const handleReadBook = () => {

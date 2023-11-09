@@ -25,7 +25,7 @@ const BookList = () => {
      
       <div className={styles.book_container}>
         {filteredBooks.map((book) => (
-          <Link to={`/books/${book.id}`} key={book.id}>
+          <Link to={`/child/books/${book.id}`} key={book.id}>
             <div className={styles.book_card}>
               <img src={book.image} alt={book.title} className={styles.book_cover} />
               <h3 className={styles.book_title}>{book.title}</h3>

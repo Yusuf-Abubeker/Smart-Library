@@ -22,7 +22,7 @@ const Home = () => {
             />
             <h3>Adventure in Wonderland</h3>
             <p>Join Alice on her magical journey.</p>
-            <Link to="/books/1" className={styles.read_more_link}>
+            <Link to="/child/books/1" className={styles.read_more_link}>
               Read More
             </Link>
           </div>
@@ -34,7 +34,7 @@ const Home = () => {
             />
             <h3>The Dinosaur Guide</h3>
             <p>Learn about the fascinating world of dinosaurs.</p>
-            <Link to="/books/2" className={styles.read_more_link}>
+            <Link to="/child/books/2" className={styles.read_more_link}>
               Read More
             </Link>
           </div>
@@ -43,13 +43,13 @@ const Home = () => {
       <section className={styles.popular_categories}>
         <h2>Popular Categories</h2>
         <div className={styles.category_list}>
-          <Link to="/books?category=Adventure" className={styles.category_button}>
+          <Link to="/child/books?category=Adventure" className={styles.category_button}>
             <FaStar />Adventure
           </Link>
-          <Link to="/books?category=Education" className={styles.category_button}>
+          <Link to="/child/books?category=Education" className={styles.category_button}>
             <FaSchool />Education
           </Link>
-          <Link to="/books?category=Mystery" className={styles.category_button}>
+          <Link to="/child/books?category=Mystery" className={styles.category_button}>
             <FaQuestionCircle />Mystery
           </Link>
         </div>
@@ -57,7 +57,7 @@ const Home = () => {
       <section className={styles.call_to_action}>
         <h2>Get Started</h2>
         <p>Start exploring a world of wonderful stories and educational resources for kids.</p>
-        <Link to="/books" className={styles.btn}>Browse the Library <FaArrowRight /></Link>
+        <Link to="/child/books" className={styles.btn}>Browse the Library <FaArrowRight /></Link>
       </section>
     </div>
   );

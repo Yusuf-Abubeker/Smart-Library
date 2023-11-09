@@ -6,7 +6,7 @@
 }
 
 .header {
-  background: #00ccff;
+  background: linear-gradient(135deg, #FF7F00, #FF00CC);
   padding: 20px;
 }
 
