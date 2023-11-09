@@ -1,6 +1,4 @@
-/* BookList.css */
-
-.book-list {
+.book_list {
   text-align: center;
   padding: 20px;
   background: #ffdb4d;
@@ -12,18 +10,18 @@
   padding: 20px;
 }
 
-.library-title {
+.library_title {
   font-size: 36px;
   color: #fff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
-.category-header {
 
+.category_header {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 
-.book-container {
+.book_container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -34,38 +32,37 @@
   animation: fadeIn 1s ease-in;
 }
 
-.book-card {
+.book_card {
   background: #fff;
-  border: 2px solid #ff6600;
-  border-radius: 10px;
-  padding: 20px;
-  text-align: center;
-  text-decoration: none;
-  transition: transform 0.3s, box-shadow 0.3s;
-  font-family: 'Arial', sans-serif;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-  width: 100%;
-  transform-origin: center;
+    border: 5px solid #FF7F00;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+    font-family: 'Baloo', cursive;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    margin: 10px;
+    position: relative;
 }
 
-.book-card:hover {
+.book_card:hover {
   transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  text-decoration: none;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  background: #FF00CC;
 }
 
-.book-cover {
+.book_cover {
   max-width: 100%;
   border-radius: 10px;
   transition: transform 0.3s;
 }
 
-.book-card:hover .book-cover {
+.book_card:hover .book_cover {
   transform: scale(1.1);
 }
 
-.book-title {
+.book_title {
   font-size: 20px;
   margin: 10px 0;
   font-family: 'Comic Sans MS', cursive;
@@ -73,7 +70,7 @@
   text-decoration: none;
 }
 
-.book-description {
+.book_description {
   font-size: 16px;
   color: #666;
   margin: 10px 0;
@@ -81,7 +78,7 @@
   font-family: 'Arial', sans-serif;
 }
 
-.read-button {
+.read_button {
   background: #ff6600;
   color: #fff;
   padding: 10px 20px;
@@ -93,7 +90,7 @@
   transition: background 0.3s;
 }
 
-.read-button:hover {
+.read_button:hover {
   background: #ff3300;
 }
 

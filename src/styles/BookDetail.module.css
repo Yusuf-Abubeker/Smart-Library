@@ -1,23 +1,22 @@
-/* BookDetail.css */
-.book-detail {
-  background-color: #f7e6e8; /* Light pink background */
+.book_detail {
+  background-color: #f7e6e8;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.book-detail-header {
+.book_detail_header {
   text-align: center;
   margin-bottom: 20px;
 }
 
-.book-detail-title {
+.book_detail_title {
   font-size: 24px;
-  color: #ff6b81; /* Pink title */
+  color: #ff6b81;
 }
 
-.close-button {
-  background-color: #ffd700; /* Yellow button */
+.close_button {
+  background-color: #ffd700;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
@@ -25,19 +24,19 @@
   font-weight: bold;
 }
 
-.close-button:hover {
-  background-color: #ffeb3b; /* Brighter yellow on hover */
+.close_button:hover {
+  background-color: #ffeb3b;
 }
 
-.book-detail-content {
+.book_detail_content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #fff; /* White background to resemble pages */
+  background-color: #fff;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  animation: fadeIn 0.5s; /* Fade-in animation */
+  animation: fadeIn 0.5s;
 }
 
 @keyframes fadeIn {
@@ -49,12 +48,12 @@
   }
 }
 
-.book-detail-image img {
+.book_detail_image img {
   max-width: 100%;
-  border: 5px solid #ff6b81; /* Pink border around the book image */
+  border: 5px solid #ff6b81;
   border-radius: 10px;
   margin-bottom: 20px;
-  animation: bounce 1s infinite alternate; /* Bouncing animation */
+  animation: bounce 1s infinite alternate;
 }
 
 @keyframes bounce {
@@ -66,33 +65,33 @@
   }
 }
 
-.book-detail-info {
+.book_detail_info {
   text-align: center;
 }
 
-.book-detail-category {
+.book_detail_category {
   font-size: 16px;
-  color: #00aaff; /* Blue category text */
+  color: #00aaff;
   font-weight: bold;
 }
 
-.book-detail-description {
+.book_detail_description {
   font-size: 16px;
-  color: #006400; /* Dark green description text */
+  color: #006400;
 }
 
-.book-detail-content p {
+.book_detail_content p {
   font-size: 18px;
   line-height: 1.5;
   text-align: justify;
   margin: 0;
   padding: 10px;
-  background-color: #ffffcc; /* Light yellow background for readability */
+  background-color: #ffffcc;
   border: 1px solid #000;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   margin-bottom: 10px;
-  animation: zoomIn 1s; /* Zoom-in animation */
+  animation: zoomIn 1s;
 }
 
 @keyframes zoomIn {
@@ -104,8 +103,8 @@
   }
 }
 
-.read-button {
-  background-color: #ff6b81; /* Pink Read button */
+.read_button {
+  background-color: #ff6b81;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
@@ -116,7 +115,7 @@
   transition: background-color 0.3s;
 }
 
-.read-button:hover {
-  background-color: #ff4757; /* Darker pink on hover */
+.read_button:hover {
+  background-color: #ff4757;
   transform: scale(1.1);
 }

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styles/Contact.css";
+import styles from "../styles/Contact.module.css";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -14,11 +14,11 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact-page">
+    <div className={styles.contact_page}>
       <h1>Contact Us</h1>
       <p>We'd love to hear from you! Send us a message:</p>
       <form onSubmit={handleSubmit}>
-        <div className="form-group">
+        <div className={styles.form_group}>
           <label htmlFor="name">Your Name</label>
           <input
             type="text"
@@ -28,7 +28,7 @@ const Contact = () => {
             onChange={(e) => setName(e.target.value)}
           />
         </div>
-        <div className="form-group">
+        <div className={styles.form_group}>
           <label htmlFor="email">Your Email</label>
           <input
             type="email"
@@ -38,7 +38,7 @@ const Contact = () => {
             onChange={(e) => setEmail(e.target.value)}
           />
         </div>
-        <div className="form-group">
+        <div className={styles.form_group}>
           <label htmlFor="message">Your Message</label>
           <textarea
             id="message"
@@ -50,7 +50,7 @@ const Contact = () => {
         <button type="submit">Submit</button>
       </form>
       {isSubmitted && (
-        <p className="confirmation-message">
+        <p className={styles.confirmation_message}>
           Thanks for contacting us! We'll get back to you soon.
         </p>
       )}

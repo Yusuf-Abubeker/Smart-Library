@@ -1,25 +1,25 @@
 import React from 'react';
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
-import "../styles/Footer.css"
+import styles from "../styles/Footer.module.css"
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="footer-content">
-        <div className="footer-logo">
-          <h2 className="footer-title">Children's Library</h2>
+    <footer className={styles.footer}>
+      <div className={styles.footer_content}>
+        <div className={styles.footer_logo}>
+          <h2 className={styles.footer_title}>Children's Library</h2>
         </div>
-        <div className="footer-links">
-          <ul className="footer-list">
-            <li className="footer-item"><Link to="/about" className="footer-link">About Us</Link></li>
-            <li className="footer-item"><Link to="/contact" className="footer-link">Contact Us</Link></li>
+        <div className={styles.footer_links}>
+          <ul className={styles.footer_list}>
+            <li className={styles.footer_item}><Link to="/about" className={styles.footer_link}>About Us</Link></li>
+            <li className={styles.footer_item}><Link to="/contact" className={styles.footer_link}>Contact Us</Link></li>
           </ul>
         </div>
-        <div className="footer-social">
-          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebook size={32} className="social-icon" /></a>
-          <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"><FaTwitter size={32} className="social-icon" /></a>
-          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><FaInstagram size={32} className="social-icon" /></a>
+        <div className={styles.footer_social}>
+          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebook size={32} className={styles.social_icon} /></a>
+          <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"><FaTwitter size={32} className={styles.social_icon} /></a>
+          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><FaInstagram size={32} className={styles.social_icon} /></a>
         </div>
       </div>
     </footer>

@@ -1,18 +1,17 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import books from "../data/bookData"; 
-import "../styles/BookDetail.css";
+import books from "../data/bookData";
+import styles from "../styles/BookDetail.module.css";
 import ErrorPage from "./ErrorPage";
 
 const BookDetail = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const [isBookOpen, setIsBookOpen] = useState(false);
   const [book, setBook] = useState(null); // Store the selected book
 
   const { bookId } = useParams();
 
   useEffect(() => {
- 
     const selectedBook = books.find((book) => book.id === parseInt(bookId));
     if (selectedBook) {
       setBook(selectedBook);
@@ -20,9 +19,8 @@ const BookDetail = () => {
   }, [bookId]);
 
   const handleClose = () => {
-
     setIsBookOpen(false);
-    navigate('/books')
+    navigate('/books');
   };
 
   const handleReadBook = () => {
@@ -30,31 +28,31 @@ const BookDetail = () => {
   };
 
   if (!book) {
-    return <ErrorPage/>;
+    return <ErrorPage />;
   }
 
   return (
-    <div className="book-detail">
-      <div className="book-detail-header">
-        <h2 className="book-detail-title">{book.title}</h2>
-        <button className="close-button" onClick={handleClose}>
+    <div className={styles.book_detail}>
+      <div className={styles.book_detail_header}>
+        <h2 className={styles.book_detail_title}>{book.title}</h2>
+        <button className={styles.close_button} onClick={handleClose}>
           Close
         </button>
       </div>
-      <div className="book-detail-content">
-        <div className="book-detail-image">
+      <div className={styles.book_detail_content}>
+        <div className={styles.book_detail_image}>
           <img src={book.image} alt={book.title} />
         </div>
-        <div className="book-detail-info">
+        <div className={styles.book_detail_info}>
           {isBookOpen ? (
-            <div className="book-detail-content">
+            <div className={styles.book_detail_content}>
               <p>{book.content}</p>
             </div>
           ) : (
             <div>
-              <p className="book-detail-category">{book.category}</p>
-              <p className="book-detail-description">{book.description}</p>
-              <button className="read-button" onClick={handleReadBook}>
+              <p className={styles.book_detail_category}>{book.category}</p>
+              <p className={styles.book_detail_description}>{book.description}</p>
+              <button className={styles.read_button} onClick={handleReadBook}>
                 Read
               </button>
             </div>
