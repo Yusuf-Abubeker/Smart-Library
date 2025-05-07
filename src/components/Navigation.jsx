@@ -7,10 +7,10 @@ const Navigation = () => {
   return (
     <nav className={styles.nav}>
       <ul className={styles.nav_list}>
-        <li className={styles.nav_item}><Link to="/child"><FaHome/>Home</Link></li>
-        <li className={styles.nav_item}><Link to="/child/books"><FaBook/>Book List</Link></li>
-        <li className={styles.nav_item}><Link to="/child/about"><FaInfo/>About</Link></li>
-        <li className={styles.nav_item}><Link to="/child/contact"><FaEnvelope/>Contact</Link></li>
+        <li className={styles.nav_item}><Link to="/"><FaHome/>Home</Link></li>
+        <li className={styles.nav_item}><Link to="/books"><FaBook/>Book List</Link></li>
+        <li className={styles.nav_item}><Link to="/about"><FaInfo/>About</Link></li>
+        <li className={styles.nav_item}><Link to="/contact"><FaEnvelope/>Contact</Link></li>
       </ul>
     </nav>
   );
