@@ -12,8 +12,8 @@ const Footer = () => {
         </div>
         <div className={styles.footer_links}>
           <ul className={styles.footer_list}>
-            <li className={styles.footer_item}><Link to="/child/about" className={styles.footer_link}>About Us</Link></li>
-            <li className={styles.footer_item}><Link to="/child/contact" className={styles.footer_link}>Contact Us</Link></li>
+            <li className={styles.footer_item}><Link to="/about" className={styles.footer_link}>About Us</Link></li>
+            <li className={styles.footer_item}><Link to="/contact" className={styles.footer_link}>Contact Us</Link></li>
           </ul>
         </div>
         <div className={styles.footer_social}>
